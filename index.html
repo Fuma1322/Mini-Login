@@ -11,13 +11,15 @@
             <label for="passWord">Paasword:</label><input type="password" id="passWord"/>
             <p id="message"></p>
             <br/><br/>
-            <a href="#">Log In</a>
+            <a href="#" onclick="verifyUser()">Log In</a>
         </form>
 
         <script>
             function verifyUser () {
                 var username = document.getElementById("userName").value;
-                var password = document.getElementById("PassWord").value;
+                var password = document.getElementById("passWord").value;
+
+                checkUserCreds (username, password);
             }
 
             function checkUserCreds (username, password) {
@@ -26,6 +28,8 @@
 
                 if ( username == systemUser && password == systemPassword) {
                     document.getElementById("message").innerHTML = "Login Successful"
+                } else {
+                    document.getElementById("message").innerHTML = "Sign In error: Check your credentials"
                 }
             }
         </script>
