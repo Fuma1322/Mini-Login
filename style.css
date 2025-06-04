@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ffffff, #ffffff);
+    background-color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ p:first-of-type {
     top: 50px;
     font-size: 22px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 label {
@@ -44,7 +44,7 @@ input[type="password"] {
 }
 
 #success {
-    margin-top: 15px;
+    margin-top: 97px;
     font-size: 24px;
     color: green;
 }
@@ -55,24 +55,6 @@ input[type="password"] {
     color: red;
 }
 
-a {
-    display: inline-block;
-    margin-top: 20px;
-    text-align: center;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-a:hover {
-    background-color: #0056b3;
-}
-
-/* Button Styling */
 button {
     width: 100%;
     padding: 12px;
@@ -83,7 +65,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.4s ease;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
 }
@@ -95,5 +77,4 @@ button:hover {
 
 button:active {
     background-color: #0a0a0a;
-    transform: translateY(0);
 }
