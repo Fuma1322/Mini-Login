@@ -7,12 +7,17 @@
     <body>
         <p>Welcome, Please Log In</p>
 
-        <form>
-            <label for="userName">Username:</label><input type="text" id="userName"/><br/>
-            <label for="passWord">Paasword:</label><input type="password" id="passWord"/>
-            <p id="message"></p>
-            <br/><br/>
-            <a href="#" onclick="verifyUser()">Log In</a>
+        <form onsubmit="event.preventDefault(); verifyUser();">
+            <label for="userName">Username:</label>
+            <input type="text" id="userName" required />
+            
+            <label for="passWord">Password:</label>
+            <input type="password" id="passWord" required />
+            
+            <p id="success"></p>
+            <p id="error"></p>
+
+            <button type="submit">Log In</button>
         </form>
 
         <script>
@@ -28,9 +33,9 @@
                 var systemPassword = "7791"
 
                 if ( username == systemUser && password == systemPassword) {
-                    document.getElementById("message").innerHTML = "Login Successful"
+                    document.getElementById("success").innerHTML = "Login Successful"
                 } else {
-                    document.getElementById("message").innerHTML = "Sign In error: Check your credentials"
+                    document.getElementById("error").innerHTML = "Sign In error"
                 }
             }
         </script>

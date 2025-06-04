@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+p:first-of-type {
+    position: absolute;
+    top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#success {
+    margin-top: 15px;
+    font-size: 24px;
+    color: green;
+}
+
+#error {
+    margin-top: 15px;
+    font-size: 24px;
+    color: red;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background-color: #0a0a0a;
+    color: white;
+}
+
+button:active {
+    background-color: #0a0a0a;
+    transform: translateY(0);
+}
