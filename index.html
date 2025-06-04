@@ -20,8 +20,13 @@
                 var password = document.getElementById("PassWord").value;
             }
 
-            function checkUserCreds () {
+            function checkUserCreds (username, password) {
+                var systemUser = "Stash";
+                var systemPassword = "7791"
 
+                if ( username == systemUser && password == systemPassword) {
+                    document.getElementById("message").innerHTML = "Login Successful"
+                }
             }
         </script>
     </body>
